@@ -1,0 +1,70 @@
+TO DO: before 3.30 PM
+Learn HTML, CSS, JavaScript
+Learn TypeScript
+
+HOW DOES THE WEB WORK:
+When we click on a URL (Uniform Resource Locator), it will locate the resources.
+
+Browser -> Servers
+This is a client-server model.
+The browser requests, and the server validates and then gives a response.
+The request is formatted in the form of HTTP (HyperText Transfer Protocol).
+
+Example:
+
+vbnet
+Copy
+Edit
+GET /index.html HTTP/1.1  
+Host: www.random.com  
+Status Codes:
+1xx – Informational Response (These status codes are all about the information received by the server when a request is made).
+2xx – Success (This status code depicts that the request made has been fulfilled by the server and the expected response has been achieved).
+3xx – Redirection (The requested URL is redirected elsewhere).
+4xx – Client Errors (This indicates that the page is not found).
+5xx – Server Errors (A request made by the client but the server fails to complete the request).
+As the HTML code is read, it will create a DOM.
+
+DOM – Document Object Model
+This is a model that represents all the attributes (text, links, images, etc.).
+For each attribute, the browser sends a separate request to the server to fetch the resource, and then it is rendered.
+Rendering means displaying it.
+
+The browser sends a request, and the server gives an HTML resource as a response. This HTML resource will be converted into a DOM.
+
+HTML BASICS
+html
+Copy
+Edit
+<!DOCTYPE html> <!-- This is a declaration -->
+<html></html> <!-- This is used to write at the start and end of the document for declaration -->
+<title> <!-- Self-explanatory -->
+<body> <!-- Displays the elements in the body of the page -->
+<img> <!-- Displays an image -->
+<p> <!-- Displays a paragraph -->
+<style> <!-- For styling using CSS -->
+We can use classes:
+
+html
+Copy
+Edit
+<p class="username"> <!-- This is a classification, and any changes mentioning "username" will change only that particular class's elements -->
+Now, the DOM looks like:
+
+less
+Copy
+Edit
+       html  
+     /      \  
+  head     body  
+ /    \      |  
+title   h1  img  
+We can use DevTools provided by the web browser to adjust CSS and then apply it to the final code. This is handy and easy.
+
+We use an HTML validator for fine-tuning the HTML file → @validator.w3
+We use a CSS validator for fine-tuning the CSS sections → @Jigsaw CSS Validator
+
+html
+Copy
+Edit
+<a href="link"> <!-- This is to provide links (anchor elements) -->
